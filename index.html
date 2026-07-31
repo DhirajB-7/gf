@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Girlfriend's Day ❤️</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+
+  <!-- Loading Screen with Heartbeat -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="heartbeat-loader">
+      <span class="heartbeat-icon">❤️</span>
+    </div>
+    <p class="loading-text">Loading your love...</p>
+  </div>
+
+  <!-- Background animated gradient and particles -->
+  <div class="background-gradient"></div>
+  <canvas id="particles-canvas"></canvas>
+  
+  <!-- Cursor hearts layer -->
+  <div id="cursor-hearts-container"></div>
+  
+  <!-- Floating elements -->
+  <div id="floating-hearts-container"></div>
+  <div id="floating-butterflies-container"></div>
+  <div id="floating-stars-container"></div>
+
+  <!-- Main content -->
+  <main class="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="sparkles-hero">
+        <span class="sparkle"></span>
+        <span class="sparkle"></span>
+        <span class="sparkle"></span>
+      </div>
+      
+      <h1 class="typing-text" id="typing-title">Happy Girlfriend's Day ❤️</h1>
+      
+      <div class="heartbeat-container">
+        <span class="heartbeat">❤️</span>
+      </div>
+      
+      <p class="hero-subtitle">A small surprise for the cutest person in my life.</p>
+      
+      <div class="floating-hearts-hero">
+        <span class="float-heart">💗</span>
+        <span class="float-heart">💕</span>
+        <span class="float-heart">💖</span>
+      </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery" id="gallery">
+      <h2 class="section-title">Our Beautiful Moments</h2>
+      
+      <div class="gallery-container">
+        <div class="gallery-card" data-index="0">
+          <div class="gallery-image-wrapper">
+            <img src="photos/image1.jpeg" alt="Memory 1" class="gallery-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22%3E%3Crect fill=%22%23ff69b4%22 width=%22300%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22white%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EImage 1%3C/text%3E%3C/svg%3E'">
+            <div class="gallery-overlay"></div>
+          </div>
+          <p class="gallery-caption">Every time I look at you, my day instantly becomes brighter. Your smile is the most beautiful thing I've ever seen. ❤️</p>
+        </div>
+
+        <div class="gallery-card" data-index="1">
+          <div class="gallery-image-wrapper">
+            <img src="photos/image2.jpeg" alt="Memory 2" class="gallery-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22%3E%3Crect fill=%22%23ff1493%22 width=%22300%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22white%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EImage 2%3C/text%3E%3C/svg%3E'">
+            <div class="gallery-overlay"></div>
+          </div>
+          <p class="gallery-caption">You look unbelievably cute here. I could stare at this picture forever because you make my heart skip a beat.</p>
+        </div>
+
+        <div class="gallery-card" data-index="2">
+          <div class="gallery-image-wrapper">
+            <img src="photos/image3.jpeg" alt="Memory 3" class="gallery-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22%3E%3Crect fill=%22%23ff69b4%22 width=%22300%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22white%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EImage 3%3C/text%3E%3C/svg%3E'">
+            <div class="gallery-overlay"></div>
+          </div>
+          <p class="gallery-caption">This is one of my favorite memories. You're not just beautiful—you make every moment feel special.</p>
+        </div>
+
+        <div class="gallery-card" data-index="3">
+          <div class="gallery-image-wrapper">
+            <img src="photos/image4.jpeg" alt="Memory 4" class="gallery-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22%3E%3Crect fill=%22%23ff1493%22 width=%22300%22 height=%22300%22/%3E%3Ctext x=%2２50%２5%２ y=%２50%２5%２ font-size=%２24%２ fill=%２white%２ text-anchor=%２middle%２ dominant-baseline=%２middle%２%３EImage 4%３C/text%３E%３C/svg%３E'">
+            <div class="gallery-overlay"></div>
+          </div>
+          <p class="gallery-caption">I don't know how you manage to be this adorable every single day. You're truly one of a kind.</p>
+        </div>
+
+        <div class="gallery-card" data-index="4">
+          <div class="gallery-image-wrapper">
+            <img src="photos/image5.jpeg" alt="Memory 5" class="gallery-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22%3E%3Crect fill=%22%23ff69b4%22 width=%22300%22 height=%22300%22/%3E%3Ctext x=%2２50%２5%２ y=%２50%２5%２ font-size=%２24%２ fill=%２white%２ text-anchor=%２middle%２ dominant-baseline=%２middle%２%３EImage 5%３C/text%３E%３C/svg%３E'">
+            <div class="gallery-overlay"></div>
+          </div>
+          <p class="gallery-caption">My favorite place will always be wherever you are. Thank you for making my life happier.</p>
+        </div>
+      </div>
+
+      <p class="gallery-message">I hope one day we create thousands of memories together.</p>
+    </section>
+
+    <!-- Kiss Button Section -->
+    <section class="kiss-section" id="kiss-section">
+      <button class="kiss-button" id="kiss-button">💋 Send You a Kiss</button>
+      <div id="kiss-message" class="kiss-message" style="display: none;">Infinite kisses reserved only for you ❤️</div>
+    </section>
+
+    <!-- Love Counter & Timer -->
+    <section class="counters-section">
+      <div class="counter love-counter">
+        <p>Reasons I Love You: <span class="counter-value">∞</span></p>
+      </div>
+      <div class="counter time-counter">
+        <p>Every second with you is precious ❤️</p>
+        <p class="timer" id="timer">00:00:00</p>
+      </div>
+    </section>
+
+    <!-- Envelope Section -->
+    <section class="envelope-section" id="envelope-section">
+      <h2 class="section-title">Open Me</h2>
+      
+      <div class="envelope-container">
+        <div class="envelope" id="envelope">
+          <div class="envelope-flap"></div>
+          <div class="envelope-body">
+            <div class="envelope-front">✉️</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Letter Display -->
+      <div id="letter-display" class="letter-display" style="display: none;">
+        <div class="letter-card">
+          <div class="letter-content">
+            <p class="letter-greeting">My Love,</p>
+            
+            <p>Happy Girlfriend's Day ❤️</p>
+            
+            <p>I know I haven't always been perfect, and I'm truly sorry for every moment I hurt you, knowingly or unknowingly.</p>
+            
+            <p>Thank you for staying beside me, supporting me, and filling my life with happiness.</p>
+            
+            <p>You are the cutest, sweetest, most caring, and most beautiful person I've ever met.</p>
+            
+            <p>Every smile of yours means the world to me.</p>
+            
+            <p>I promise to keep trying to become a better person for you.</p>
+            
+            <p>I hope today reminds you how incredibly loved and appreciated you are.</p>
+            
+            <p>No matter how many days pass, you'll always have a special place in my heart.</p>
+            
+            <p>I love you more than words can express.</p>
+            
+            <p class="letter-closing">Forever Yours ❤️</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bouquet Section -->
+    <section class="bouquet-section" id="bouquet-section" style="display: none;">
+      <h2 class="section-title">A Bouquet for You</h2>
+      
+      <div class="bouquet-container">
+        <!-- SVG Bouquet -->
+        <svg class="bouquet" viewBox="0 0 200 400" xmlns="http://www.w3.org/2000/svg">
+          <!-- Stems -->
+          <line x1="100" y1="100" x2="70" y2="350" stroke="#2d5016" stroke-width="2"/>
+          <line x1="100" y1="100" x2="100" y2="350" stroke="#2d5016" stroke-width="2"/>
+          <line x1="100" y1="100" x2="130" y2="350" stroke="#2d5016" stroke-width="2"/>
+          
+          <!-- Ribbon -->
+          <path d="M 60 320 Q 100 330 140 320" stroke="#ffd700" stroke-width="3" fill="none" stroke-linecap="round"/>
+          
+          <!-- Roses - will be animated in JS -->
+          <g class="rose" data-rose="0" transform="translate(100, 100)">
+            <!-- Outer petals -->
+            <ellipse cx="0" cy="-8" rx="6" ry="8" fill="#dc143c" opacity="0"/>
+            <ellipse cx="8" cy="-4" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(45)"/>
+            <ellipse cx="8" cy="4" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(90)"/>
+            <ellipse cx="0" cy="8" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(135)"/>
+            <ellipse cx="-8" cy="4" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(180)"/>
+            <ellipse cx="-8" cy="-4" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(225)"/>
+            <ellipse cx="0" cy="-8" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(270)"/>
+            <ellipse cx="0" cy="0" rx="4" ry="4" fill="#8b0000" opacity="0"/>
+          </g>
+
+          <!-- More roses positioned differently -->
+          <g class="rose" data-rose="1" transform="translate(70, 120)">
+            <ellipse cx="0" cy="-8" rx="6" ry="8" fill="#dc143c" opacity="0"/>
+            <ellipse cx="8" cy="-4" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(45)"/>
+            <ellipse cx="8" cy="4" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(90)"/>
+            <ellipse cx="0" cy="8" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(135)"/>
+            <ellipse cx="-8" cy="4" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(180)"/>
+            <ellipse cx="-8" cy="-4" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(225)"/>
+            <ellipse cx="0" cy="-8" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(270)"/>
+            <ellipse cx="0" cy="0" rx="4" ry="4" fill="#8b0000" opacity="0"/>
+          </g>
+
+          <g class="rose" data-rose="2" transform="translate(130, 120)">
+            <ellipse cx="0" cy="-8" rx="6" ry="8" fill="#dc143c" opacity="0"/>
+            <ellipse cx="8" cy="-4" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(45)"/>
+            <ellipse cx="8" cy="4" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(90)"/>
+            <ellipse cx="0" cy="8" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(135)"/>
+            <ellipse cx="-8" cy="4" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(180)"/>
+            <ellipse cx="-8" cy="-4" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(225)"/>
+            <ellipse cx="0" cy="-8" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(270)"/>
+            <ellipse cx="0" cy="0" rx="4" ry="4" fill="#8b0000" opacity="0"/>
+          </g>
+
+          <g class="rose" data-rose="3" transform="translate(85, 135)">
+            <ellipse cx="0" cy="-8" rx="6" ry="8" fill="#dc143c" opacity="0"/>
+            <ellipse cx="8" cy="-4" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(45)"/>
+            <ellipse cx="8" cy="4" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(90)"/>
+            <ellipse cx="0" cy="8" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(135)"/>
+            <ellipse cx="-8" cy="4" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(180)"/>
+            <ellipse cx="-8" cy="-4" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(225)"/>
+            <ellipse cx="0" cy="-8" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(270)"/>
+            <ellipse cx="0" cy="0" rx="4" ry="4" fill="#8b0000" opacity="0"/>
+          </g>
+
+          <g class="rose" data-rose="4" transform="translate(115, 135)">
+            <ellipse cx="0" cy="-8" rx="6" ry="8" fill="#dc143c" opacity="0"/>
+            <ellipse cx="8" cy="-4" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(45)"/>
+            <ellipse cx="8" cy="4" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(90)"/>
+            <ellipse cx="0" cy="8" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(135)"/>
+            <ellipse cx="-8" cy="4" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(180)"/>
+            <ellipse cx="-8" cy="-4" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(225)"/>
+            <ellipse cx="0" cy="-8" rx="6" ry="8" fill="#dc143c" opacity="0" transform="rotate(270)"/>
+            <ellipse cx="0" cy="0" rx="4" ry="4" fill="#8b0000" opacity="0"/>
+          </g>
+        </svg>
+
+        <div id="falling-petals" class="falling-petals"></div>
+      </div>
+    </section>
+
+    <!-- Ending Section -->
+    <section class="ending-section" id="ending-section" style="display: none;">
+      <h2 class="glow-text">Thank you for being the best part of my life.</h2>
+      <p class="ending-message">Happy Girlfriend's Day ❤️</p>
+      <div class="ending-hearts">
+        <span class="float-heart-ending">💗</span>
+        <span class="float-heart-ending">💕</span>
+        <span class="float-heart-ending">💖</span>
+        <span class="float-heart-ending">💗</span>
+        <span class="float-heart-ending">💕</span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Scripts -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
